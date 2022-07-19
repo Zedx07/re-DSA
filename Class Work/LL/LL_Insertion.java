@@ -1,4 +1,4 @@
-public class RetryLinkedlist {
+public class LL_Insertion {
 
     public class Node {
         Node next;
@@ -37,7 +37,7 @@ public class RetryLinkedlist {
     }
 
     public static void main(String[] args) {
-        RetryLinkedlist LL = new RetryLinkedlist();
+        LL_Insertion LL = new LL_Insertion();
         LL.insertNode(2);
         LL.insertNode(3);
         LL.insertNode(4);

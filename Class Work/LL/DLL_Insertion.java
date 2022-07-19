@@ -1,4 +1,4 @@
-public class DoublyLinkedList {
+public class DLL_Insertion {
     class Node {
         Node prev;
         Node next;
@@ -40,7 +40,7 @@ public class DoublyLinkedList {
     }
     
     public static void main(String[] args) {
-        DoublyLinkedList DLL = new DoublyLinkedList();
+        DLL_Insertion DLL = new DLL_Insertion();
         DLL.addNode(5);
         DLL.addNode(15);
         DLL.addNode(25);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DLL {
+public class DoublyLinkedList {
 
     class Node {
         Node prev, next;
@@ -89,7 +89,7 @@ public class DLL {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DLL LL = new DLL();
+        DoublyLinkedList LL = new DoublyLinkedList();
         LL.addNode(3);
         LL.addNode(33);
         LL.addNode(333);

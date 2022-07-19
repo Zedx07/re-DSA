@@ -1,6 +1,6 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class DLLretry {
+public class DLL_Deletion {
 
     class Node {
         Node prev, next;
@@ -76,7 +76,7 @@ public class DLLretry {
     }
 
     public static void main(String[] args) {
-        DLLretry LL = new DLLretry();
+        DLL_Deletion LL = new DLL_Deletion();
         LL.addNode(0);
         LL.addNode(1);
         LL.addNode(2);
