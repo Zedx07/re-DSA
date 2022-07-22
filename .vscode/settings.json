@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "Class Work\\Java"
+        "Class Work/Java",
+        "Class Work/Trees"
     ]
 }
