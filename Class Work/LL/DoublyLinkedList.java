@@ -48,8 +48,7 @@ public class DoublyLinkedList {
         if (head == null) {
             System.out.println("The list is empty");
             return;
-        } else 
-        {
+        } else {
             Node del = head;
             for (int i = 0; i < key; i++) {
                 del = del.next;
@@ -80,7 +79,7 @@ public class DoublyLinkedList {
         }
         System.out.print("null <==> ");
         while (current != null) {
-            System.out.print(current.data+" <==> ");
+            System.out.print(current.data + " <==> ");
             current = current.next;
         }
         System.out.print("null ");
@@ -116,7 +115,7 @@ public class DoublyLinkedList {
                 break;
 
             case 3:
-                LL.deleteNode(2);
+                LL.deleteNode(5);
                 System.out.print("Updated List: ");
                 LL.display();
                 break;

@@ -1,12 +1,9 @@
-public class BST_recursion 
-{
-    class Node 
-    {
+public class BST_recursion {
+    class Node {
         int data;
         Node left, right;
 
-        public Node(int item) 
-        {
+        public Node(int item) {
             data = item;
             left = right = null;
         }
@@ -14,26 +11,21 @@ public class BST_recursion
 
     Node root;
 
-    BST_recursion() 
-    {
+    BST_recursion() {
         root = null;
     }
 
-    BST_recursion(int value) 
-    {
+    BST_recursion(int value) {
         root = new Node(value);
     }
 
-    void insert(int data) 
-    {
+    void insert(int data) {
         root = insertRec(root, data);
     }
 
-    Node insertRec(Node root, int data) 
-    {
+    Node insertRec(Node root, int data) {
 
-        if (root == null) 
-        {
+        if (root == null) {
             root = new Node(data);
             return root;
         }
@@ -46,13 +38,11 @@ public class BST_recursion
         return root;
     }
 
-    void inorder() 
-    {
+    void inorder() {
         inorderRec(root);
     }
 
-    void inorderRec(Node root) 
-    {
+    void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.left);
             System.out.println(root.data);
@@ -60,8 +50,7 @@ public class BST_recursion
         }
     }
 
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         BST_recursion tree = new BST_recursion();
 
         tree.insert(50);

@@ -1,28 +1,41 @@
-public class LL_Insertion {
-
-    public class Node {
-        Node next;
+public class CLL {
+    class Node {
         int data;
+        Node next;
 
         public Node(int data) {
             this.data = data;
-            this.next = null;
         }
     }
 
-    Node head = null;
-    Node tail = null;
+    public Node head, tail = null;
 
-    public void insertNode(int data) {
+    public void pushNode(int data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
             tail = newNode;
+            newNode.next = head;
         } else {
             tail.next = newNode;
             tail = newNode;
+            tail.next = head;
+        }
+    }
+
+    public void deleteN(int key) {
+        Node curr = head, prev = null;
+        if (head != null && curr.data == key) {
+            head = curr.next;
+            return;
         }
 
+        while (head != null && curr.data != key) {
+            prev = curr;
+            curr = curr.next;
+        }
+
+        prev.next = curr.next;
     }
 
     public void display() {
@@ -41,10 +54,14 @@ public class LL_Insertion {
         LL.insertNode(2);
         LL.insertNode(3);
         LL.insertNode(4);
+        LL.insertNode(5);
+        LL.insertNode(4);
         System.out.println("The elements in Linkedlist are: ");
         LL.display();
-    }
 
-    public void deleteNode(int i) {
+        System.out.println("\nAfter deletion: ");
+
+        LL.display();
+
     }
 }
