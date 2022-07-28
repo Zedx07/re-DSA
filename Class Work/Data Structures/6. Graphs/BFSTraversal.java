@@ -50,9 +50,7 @@ public class BFSTraversal {
                     queue.add(a);
                 }
             }
-
         }
-
     }
 
     public static void main(String[] args) {
